@@ -1,21 +1,18 @@
 plugins {
+    id ('maven-publish')
     alias(libs.plugins.android.library)
     alias(libs.plugins.kotlin.android)
-    id ('maven-publish')
+
 }
 afterEvaluate{
     publishing {
         publications {
             release(MavenPublication) {
-                groupId = "com.github.crazyniche1"
-                artifactId = "SocketUtil"
-                version = "3.1.5"
                 from components.release  // 发布 release 版本
-            }
-        }
-        repositories {
-            maven {
-                url = uri("https://jitpack.io")
+                groupId = 'com.github.crazyniche1'
+                artifactId = 'SocketUtil'
+                version = '3.1.6'
+
             }
         }
     }
