@@ -11,7 +11,7 @@ afterEvaluate {
                 from components.release         // 表示发布 release（jitpack 都不会使用到）
                 groupId = 'com.github.SocketUtil' // 这个是依赖库的组 id
                 artifactId = 'udSocket'       // 依赖库的名称（jitpack 都不会使用到）
-                version = "3.0.3" //
+                version = "3.0.4" //
             }
         }
     }
