@@ -1,7 +1,9 @@
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
+//    id("maven-publish")
 }
+
 
 android {
     namespace = "com.zy.socketutil"
@@ -50,6 +52,36 @@ android {
         }
     }
 }
+
+//val sourcesJar by tasks.registering(Jar::class) {
+//    archiveClassifier.set("sources")
+//    from(android.sourceSets.getByName("main").java.srcDirs)
+//}
+
+//publishing {
+//    publications {
+//        register<MavenPublication>("release") {
+//            groupId = "com.github.crazyniche1"
+//            artifactId = "udSocket" // 替换为你的 artifact ID
+//            version = "3.0.6"
+//
+//            // 使用 Android 组件而不是 Java 组件
+//            afterEvaluate {
+//                from(components["release"])
+//            }
+//            artifact(sourcesJar.get())
+//        }
+//    }
+//
+//    repositories {
+//        maven {
+//            url = uri(layout.buildDirectory.dir("repo").get().asFile.toURI())
+//            // 如果要发布到本地 Maven 仓库，可以使用以下配置：
+//            // url = uri("../repo")
+//        }
+//    }
+//}
+
 
 dependencies {
 
