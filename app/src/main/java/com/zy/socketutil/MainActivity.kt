@@ -157,8 +157,8 @@ class MainActivity : AppCompatActivity() {
         CSocket.getInstance()
             .inSocket(mSocket)
             .readHolding(transaction = indexC, address = 7, data = 10)
-            .parseReadDataDetection<List<Int>> {
-                LogTag.d("${indexC}----parseDataDetection2---- $it")
+            .parseReadDataDetection<Int> {
+                LogTag.d("${indexC}----parseDataDetection2---- ${it[1]}")
             }
     }
 

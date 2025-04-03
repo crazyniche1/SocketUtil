@@ -43,13 +43,15 @@ class use {
     //  添加实时任务
     private fun test2(): Unit {
         queueTask.setReadAction {
-            //  realTimeRead()
+              readHolding()
+
         }
     }
 
     // 添加任务
     private fun test3(): Unit {
         queueTask.addTasks(QueueTask.Task(0, "add") {
+            write()
         })
     }
 

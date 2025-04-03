@@ -4,6 +4,7 @@ plugins {
     alias(libs.plugins.kotlin.android)
 
 }
+
 afterEvaluate{
     publishing {
         publications {
@@ -53,5 +54,8 @@ dependencies {
     implementation libs.androidx.core.ktx
     implementation libs.androidx.appcompat
     implementation libs.material
+
+
+
 
 }

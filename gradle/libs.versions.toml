@@ -14,6 +14,9 @@ activity = "1.8.0"
 constraintlayout = "2.1.4"
 udsocket = "3.0"
 
+androidMavenGradlePlugin = "2.1"
+gradle = "7.4.2"
+
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
 junit = { group = "junit", name = "junit", version.ref = "junit" }
@@ -34,9 +37,13 @@ androidx-material3 = { group = "androidx.compose.material3", name = "material3" 
 androidx-activity = { group = "androidx.activity", name = "activity", version.ref = "activity" }
 androidx-constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraintlayout" }
 udsocket = { group = "com.zy.udsocket", name = "udSocket", version.ref = "udsocket" }
+gradle = { module = "com.android.tools.build:gradle", version.ref = "gradle" }
+android-maven-gradle-plugin = { module = "com.github.dcendents:android-maven-gradle-plugin", version.ref = "androidMavenGradlePlugin" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
 kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
 android-library = { id = "com.android.library", version.ref = "agp" }
+
+
 
